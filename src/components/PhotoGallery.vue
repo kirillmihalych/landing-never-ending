@@ -36,11 +36,13 @@
 .container {
   --color-dark-blue: #010a20;
   --color-light-grey: #6f7787;
+
   --fw-bold: 800;
   --fs-mid: 2.5rem;
   --fs-xxl: 3.75rem;
 
   font-family: 'DM Sans', sans-serif;
+
   width: min(100% - 2rem, 60rem);
   margin-inline: auto;
 
@@ -68,54 +70,18 @@
   list-style: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-auto-rows: minmax(4.75rem, auto);
+  grid-auto-rows: minmax(5rem, auto);
   gap: 0.75rem;
   margin-block-end: 2rem;
-}
 
-img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
 
-.photo-gallery > li {
-  border-radius: 0.625rem;
-  overflow: hidden;
-}
-
-li:nth-child(1) {
-  grid-column: span 2;
-  grid-row: 1 / span 2;
-}
-
-li:nth-child(2) {
-  grid-column: span 2;
-}
-
-li:nth-child(3) {
-  grid-column: span 2;
-  grid-row: 2 / span 2;
-}
-
-li:nth-child(4) {
-  grid-column: span 2;
-}
-
-li:nth-child(5) {
-  grid-column: span 2;
-  grid-row: span 2;
-}
-
-li:nth-child(6) {
-  grid-row: span 2;
-  grid-column: span 2;
-}
-
-@media (min-width: 768px) {
-  .photo-gallery {
-    grid-template-columns: repeat(6, 1fr);
+  li {
+    border-radius: 0.625rem;
+    overflow: hidden;
   }
 
   li:nth-child(1) {
@@ -123,19 +89,51 @@ li:nth-child(6) {
     grid-row: 1 / span 3;
   }
 
+  li:nth-child(2) {
+    grid-column: span 2;
+  }
+
   li:nth-child(3) {
     grid-column: span 2;
     grid-row: 2 / span 3;
   }
 
+  li:nth-child(4) {
+    grid-column: span 2;
+  }
+
   li:nth-child(5) {
-    grid-row: 1 / span 2;
-    grid-column: 5 / span 2;
+    grid-column: span 2;
+    grid-row: span 2;
   }
 
   li:nth-child(6) {
-    grid-row: 3 / span 2;
-    grid-column: 5 / span 2;
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(6, 1fr);
+
+    li:nth-child(1) {
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 3;
+    }
+
+    li:nth-child(3) {
+      grid-column: 3 / span 2;
+      grid-row: 2 / span 3;
+    }
+
+    li:nth-child(5) {
+      grid-row: 1 / span 2;
+      grid-column: 5 / span 2;
+    }
+
+    li:nth-child(6) {
+      grid-row: 3 / span 2;
+      grid-column: 5 / span 2;
+    }
   }
 }
 </style>
