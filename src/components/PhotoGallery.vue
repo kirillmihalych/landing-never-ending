@@ -61,8 +61,8 @@
   &__text {
     text-align: center;
     color: var(--color-light-grey);
-    line-height: 1.5rem;
     margin-block-end: 1.25rem;
+    line-height: 1.5;
   }
 }
 
