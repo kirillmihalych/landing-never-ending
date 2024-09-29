@@ -25,13 +25,17 @@
         <a href="#" class="navbar__link"> Подробнее <br class="navbar__link--line-break" />о турнире </a>
       </nav>
     </div>
+    <RunningLine />
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import RunningLine from '../components/RunningLine.vue'
+</script>
 
 <style lang="scss" scoped>
 .main-screen-container {
+  position: relative;
   background-image: url('../assets/bg/bg-chess-375.png');
   background-size: cover;
   background-repeat: no-repeat;

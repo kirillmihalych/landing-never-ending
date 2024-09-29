@@ -26,6 +26,7 @@ import HeaderComponent from '../components/HeaderComponent.vue'
   --fs-5xl: 3rem; // 48px
   --fs-6xl: 3.75rem; //60px
 
+
   @font-face {
     font-family: 'Golos text';
     src: url('../assets/fonts/GolosTextWoff2.woff2') format('woff2');
