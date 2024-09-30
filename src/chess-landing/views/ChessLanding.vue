@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import HeaderComponent from '../components/HeaderComponent.vue'
+import HeaderComponent from '../header/HeaderComponent.vue'
 </script>
 
 <style lang="scss">
